@@ -1,0 +1,27 @@
+RewriteEngine ON
+
+
+
+RewriteRule ^index/$ index.php
+RewriteRule ^card-online$ index.php?p=card-online
+RewriteRule ^luckysrandom$ index.php?p=luckysrandom
+RewriteRule ^termgame$ index.php?p=termgame
+RewriteRule ^mobiletopup$ index.php?p=mobiletopup
+RewriteRule ^product$ index.php?p=product
+RewriteRule ^categorie/$ index.php?p=product
+RewriteRule ^categorie$ index.php?p=product
+RewriteRule ^categorie/([0-9a-zA-z]+) index.php?p=categorie&g=$1 [NC,L]
+RewriteRule ^product/view/([0-9a-zA-z]+) index.php?p=view&pid=$1 [NC,L]
+RewriteRule ^card-online/([0-9a-zA-z]+) index.php?p=card-online&c=$1 [NC,L]
+
+RewriteRule ^topup$ index.php?p=topup
+RewriteRule ^truemoney$ index.php?p=truemoney
+RewriteRule ^truewallet$ index.php?p=truewallet
+RewriteRule ^banktransfer$ index.php?p=banktransfer
+RewriteRule ^accountmanage$ index.php?p=accountmanage
+RewriteRule ^createaccount$ index.php?p=createaccount
+
+
+
+
+
